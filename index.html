@@ -355,6 +355,13 @@
                 </div>
             </div>
         </div>
+		
+		<form method="POST" action="http://formspree.io/rsm.raf@gmail.com">
+			<input type="email" name="email" placeholder="Your email">
+			<textarea name="message" placeholder="Your message"></textarea>
+			<button type="submit">Send</button>
+		</form>
+		
     </section>
 
     <!-- Contact Section -->
@@ -368,7 +375,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" method="POST" action="http://formspree.io/rsm.raf@gmail.com" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
