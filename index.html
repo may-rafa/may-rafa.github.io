@@ -393,23 +393,14 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <p>Regalar</p>
-                  <input type="number" name="cantidad" class="form-control" placeholder="$" id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
+                  <label for="cantidad"> Quisiera regalarles  $</label>
+                  <input type="number" name="cantidad"  id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <label for="browsertwo"> Para que lo disfruten en </label>
-                  <input list="browsers" name="browsertwo">
-                  <h3> test </h3>                     
-                  <select name="cars">
-                    <option value="volvo">Regalo 1</option>
-                    <option value="saab">Noche hotel</option>
-                    <option value="fiat">Spa</option>
-                    <option value="audi">Nadar con ballenas</option>
-                  </select>
-                  <br>
-                  <input list="browsers" name="browser">
-                  <datalist id="browsers">
+                  <label for="listaregalos"> Para que lo disfruten en </label>
+                  <input list="listagift" name="listaregalos">
+                  <datalist id="listagift">
                     <option value="una noche de hotel">
                     <option value="una visita al spa">
                     <option value="un trago coqueto">
@@ -420,11 +411,6 @@
                 <div class="form-group">
                   <textarea name="message" rows="10" placeholder="Mensaje *"></textarea>
                 </div>
-                <div class="form-group">
-                  <input type="text" name="mensaje" rows="5" class="form-control" placeholder="Mensaje *" id="name" required data-validation-required-message="Favor de introducir tu mensaje.">
-                  <p class="help-block text-danger"></p>
-                </div>
-
                 <!-- thank you page -->
                 <input type="hidden" name="_next" value="https://rafasame.github.io/mayra-rafa/"/>
               </div>
