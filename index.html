@@ -379,9 +379,10 @@
             <h3 class="section-subheading text-muted">Es un poco díficil llevarnos un horno hasta Alemania :P, así que ...</h3>
           </div>
         </div>
-        <!-- Form Spree --><!--TODO: a) width not full page. b) Text 3 rows  -->
+        <!-- Form Spree --><!--TODO: a) width not full page. b) Text 3 rows. col-md-4  -->
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-md-10 col-md-offset-1 text-center">
+
             <form name="enviarMsg" id="enviarForma"method="POST" action="https://formspree.io/rsm.raf@gmail.com">
               <div class="row">
                 <div class="form-group">
@@ -405,11 +406,18 @@
                     <option value="una visita al spa">
                     <option value="un trago coqueto">
                     <option value="nadar con ballenas">
-                    <option value="...">
                   </datalist>
                 </div>
                 <div class="form-group">
-                  <textarea name="message" rows="10" placeholder="Mensaje *"></textarea>
+                  <select name="listaDos">
+                    <option value="hotel">una noche de hotel</option>
+                    <option value="spa">una visita al spa</option>
+                    <option value="trago">un trago coqueto</option>
+                    <option value="ballenas">nadar con ballenas</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" rows="5" placeholder="Mensaje *"></textarea>
                 </div>
                 <!-- thank you page -->
                 <input type="hidden" name="_next" value="https://rafasame.github.io/mayra-rafa/"/>
