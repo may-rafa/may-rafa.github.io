@@ -62,7 +62,7 @@
                         <a class="page-scroll" href="#Nosotros">Nosotros</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contacto">Regalar</a>
+                        <a class="page-scroll" href="#contacto">Enviar Regalo</a>
                     </li>
                 </ul>
             </div>
@@ -229,6 +229,69 @@
         </div>
     </section>
 
+    <!-- Contact Section TEST id="contact"-->
+    <section id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Enviar Regalo</h2>
+            <h3 class="section-subheading text-muted">Es un poco díficil llevarnos un horno hasta Alemania :P, ...</h3>
+          </div>
+        </div>
+        <!-- Form Spree --><!--TODO: a) width not full page. b) Text 3 rows. col-md-4  -->
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 ">
+            <form name="enviarMsg" id="enviarForma"method="POST" action="https://formspree.io/rsm.raf@gmail.com">
+              <div class="row">
+                <div class="form-group">
+                  <input type="text" name="nombre" class="form-control" placeholder="Tu Nombre *" id="name" required data-validation-required-message="Favor de introducir tu nombre.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="telefono" class="form-control" placeholder="Tu Teléfono" id="phone" required data-validation-required-message="Favor de introducir tu teléfono.">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <input type="tel" name="cantidad" class="form-control" placeholder="Cantidad $" id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">
+                  <select name="regalo_lista" class="form-control">
+                    <option value="default">Selecciona un regalo</option>
+                    <option value="hotel">Noche de hotel</option>
+                    <option value="spa">Día de Spa</option>
+                    <option value="coctel">Cocteles en la Playa</option>
+                    <option value="xcaret">Entradas a Xcaret</option>
+                    <option value="cena">Cena Romántica</option>
+                    <option value="ballenas">Nado con Tiburón Ballena</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <select name="forma_pago" class="form-control">
+                    <option value="default">Selecciona una forma de envío</option>
+                    <option value="deposito">Deposito Bancario/Oxxo</option>
+                    <option value="transferencia">Transferencia Bancario en línea</option>
+                    <option value="personal">Entrega Personal en la boda</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" rows="5" placeholder="Déjanos tu mensaje"></textarea>
+                </div>
+
+                <!-- thank you page -->
+                <input type="hidden" name="_next" value="https://rafasame.github.io/mayra-rafa/#gracias"/>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button type="submit" class="btn btn-xl">Enviar Regalo</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
 <!-- Nosotros Section -->
     <section id="Nosotros" class="bg-light-gray">
         <div class="container">
@@ -293,61 +356,24 @@
         </div>
     </section>
 
-    <!-- Contact Section TEST id="contact"-->
-    <section id="contacto">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Enviar Regalo</h2>
-            <h3 class="section-subheading text-muted">Es un poco díficil llevarnos un horno hasta Alemania :P, ...</h3>
-          </div>
-        </div>
-        <!-- Form Spree --><!--TODO: a) width not full page. b) Text 3 rows. col-md-4  -->
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2 ">
-            <form name="enviarMsg" id="enviarForma"method="POST" action="https://formspree.io/rsm.raf@gmail.com">
-              <div class="row">
-                <div class="form-group">
-                  <input type="text" name="nombre" class="form-control" placeholder="Tu Nombre *" id="name" required data-validation-required-message="Favor de introducir tu nombre.">
-                  <p class="help-block text-danger"></p>
+    <!-- Gracias Section -->
+        <section id="gracias">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">¡Gracias!</h2>
+                        <h3>Te agradecemos mucho el que seas parte de esta gran aventura. ¡Nos vemos en la boda! </h3>
+                    </div>
                 </div>
-                <div class="form-group">
-                  <input type="tel" name="telefono" class="form-control" placeholder="Tu Teléfono" id="phone" required data-validation-required-message="Favor de introducir tu teléfono.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <label for="cantidad"> Cantidad: $</label>
-                  <input type="tel" name="cantidad"  id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <label for="regalo_lista"> Regalo: </label>
-                  <select name="regalo_lista">
-                    <option value="hotel">Noche de hotel</option>
-                    <option value="spa">Día de Spa</option>
-                    <option value="coctel">Cocteles en la Playa</option>
-                    <option value="xcaret">Entradas a Xcaret</option>
-                    <option value="cena">Cena Romántica</option>
-                    <option value="ballenas">Nado con Tiburón Ballena [$500]</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <textarea name="message" rows="5" placeholder="Dejanos tu mensaje :)"></textarea>
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <span class="fa-stack fa-4x">
+                        <i class="fa fa-heart fa-stack-2x text-primary"></i>
+
+                    </span>
                 </div>
 
-                <!-- thank you page -->
-                <input type="hidden" name="_next" value="https://rafasame.github.io/mayra-rafa/"/>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div id="success"></div>
-                <button type="submit" class="btn btn-xl">Enviar Regalo</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
+            </div>
+        </section>
 
     <footer>
         <div class="container">
