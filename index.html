@@ -81,12 +81,12 @@
         </div>
     </header>
 
-    <!-- Info Section
+    <!-- Info Section-->
     <section id="Info">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">¡Nos vamos a Cancún!</h2>
+                    <h2 class="section-heading">¡NOS VAMOS A LA RIVIERA MAYA!</h2>
                     <h3 class="section-subheading text-muted">Estamos muy emocionados por compartir este gran día con ustedes. Tu presencia en nuestra boda es el mejor regalo de todos; sin embargo sabemos que algunos querrán darnos algo más. ¡Muchas gracias por adelantado!</h3>
                 </div>
             </div>
@@ -118,14 +118,13 @@
             </div>
         </div>
     </section>
--->
 
     <!-- Mesa de Regalos Section -->
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">¡Nos vamos a la Riviera Maya!</h2>
+                    <h2 class="section-heading">Ideas de Regalo</h2>
                     <h3 class="section-subheading text-muted">Su presencia en nuestra boda es el mejor regalo que nos pueden dar. Sin embargo, sabemos que algunos querrán hacernos algún regalo adicional. Lamentablemente, no nos sería posible llevarnos esa increíble lavadora en nuestra maleta hasta nuestro hogar en Alemania… es por es eso que les compartimos algunas ideas de regalos que podríamos aprovechar en nuestra luna de miel. Muchas gracias por adelantado!</h3>
                 </div>
             </div>
@@ -148,7 +147,7 @@
                 </div>
 				<!-- Regalo 2 -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-gift fa-3x"></i>
@@ -164,7 +163,7 @@
                 </div>
 				<!-- Regalo 3 -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-gift fa-3x"></i>
@@ -180,7 +179,7 @@
                 </div>
 				<!-- Regalo 4 -->
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-gift fa-3x"></i>
@@ -299,14 +298,13 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading">Regalar</h2>
-            <h3 class="section-subheading text-muted">Es un poco díficil llevarnos un horno hasta Alemania :P, así que ...</h3>
+            <h2 class="section-heading">Enviar Regalo</h2>
+            <h3 class="section-subheading text-muted">Es un poco díficil llevarnos un horno hasta Alemania :P, ...</h3>
           </div>
         </div>
         <!-- Form Spree --><!--TODO: a) width not full page. b) Text 3 rows. col-md-4  -->
         <div class="row">
-          <div class="col-md-10 col-md-offset-1 text-center">
-
+          <div class="col-md-8 col-md-offset-2 ">
             <form name="enviarMsg" id="enviarForma"method="POST" action="https://formspree.io/rsm.raf@gmail.com">
               <div class="row">
                 <div class="form-group">
@@ -318,31 +316,25 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <label for="cantidad"> Quisiera regalarles  $</label>
-                  <input type="number" name="cantidad"  id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
+                  <label for="cantidad"> Cantidad: $</label>
+                  <input type="tel" name="cantidad"  id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <label for="listaregalos"> Para que lo disfruten en </label>
-                  <input list="listagift" name="listaregalos">
-                  <datalist id="listagift">
-                    <option value="una noche de hotel">
-                    <option value="una visita al spa">
-                    <option value="un trago coqueto">
-                    <option value="nadar con ballenas">
-                  </datalist>
-                </div>
-                <div class="form-group">
-                  <select name="listaDos">
-                    <option value="hotel">una noche de hotel</option>
-                    <option value="spa">una visita al spa</option>
-                    <option value="trago">un trago coqueto</option>
-                    <option value="ballenas">nadar con ballenas</option>
+                  <label for="regalo_lista"> Regalo: </label>
+                  <select name="regalo_lista">
+                    <option value="hotel">Noche de hotel</option>
+                    <option value="spa">Día de Spa</option>
+                    <option value="coctel">Cocteles en la Playa</option>
+                    <option value="xcaret">Entradas a Xcaret</option>
+                    <option value="cena">Cena Romántica</option>
+                    <option value="ballenas">Nado con Tiburón Ballena [$500]</option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <textarea name="message" rows="5" placeholder="Mensaje *"></textarea>
+                  <textarea name="message" rows="5" placeholder="Dejanos tu mensaje :)"></textarea>
                 </div>
+
                 <!-- thank you page -->
                 <input type="hidden" name="_next" value="https://rafasame.github.io/mayra-rafa/"/>
               </div>
