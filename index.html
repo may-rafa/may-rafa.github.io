@@ -389,20 +389,33 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input type="tel" name="telefono" class="form-control" placeholder="Monto del regalo ($)" id="phone" required data-validation-required-message="Favor de introducir tu teléfono.">
+                  <input type="tel" name="telefono" class="form-control" placeholder="Tu Teléfono" id="phone" required data-validation-required-message="Favor de introducir tu teléfono.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input type="number" name="cantidad" class="form-control" placeholder="Monto del regalo en MXN pesos($)" id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
+                  <p>Regalar</p>
+                  <input type="number" name="cantidad" class="form-control" placeholder="$" id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
+                  <label for="browsertwo"> Para que lo disfruten en </label>
+                  <input list="browsers" name="browsertwo">
+                  <h3> test </h3>                     
                   <select name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
+                    <option value="volvo">Regalo 1</option>
+                    <option value="saab">Noche hotel</option>
+                    <option value="fiat">Spa</option>
+                    <option value="audi">Nadar con ballenas</option>
                   </select>
+                  <br>
+                  <input list="browsers" name="browser">
+                  <datalist id="browsers">
+                    <option value="una noche de hotel">
+                    <option value="una visita al spa">
+                    <option value="un trago coqueto">
+                    <option value="nadar con ballenas">
+                    <option value="...">
+                  </datalist>
                 </div>
                 <div class="form-group">
                   <textarea name="message" rows="10" placeholder="Mensaje *"></textarea>
