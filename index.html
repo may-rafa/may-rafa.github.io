@@ -303,7 +303,7 @@
             <form name="enviarMsg" id="enviarForma"method="POST" action="https://formspree.io/rsm.raf@gmail.com">
               <div class="row">
                 <div class="form-group">
-                  <input type="text" name="nombre" class="form-control" placeholder="Tu Nombre *" id="name" required data-validation-required-message="Favor de introducir tu nombre.">
+                  <input type="text" name="nombre" class="form-control" placeholder="Tu Nombre" id="name" required data-validation-required-message="Favor de introducir tu nombre.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
@@ -311,7 +311,7 @@
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input type="tel" name="cantidad" class="form-control" placeholder="Cantidad $" id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
+                  <input type="tel" name="cantidad" class="form-control" placeholder="Cantidad $ (MXN)" id="cantidad" required data-validation-required-message="Favor de introducir el monto del regalo en MXN pesos ($).">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
@@ -323,7 +323,7 @@
                     <option value="spa">Día de spa</option>
                     <option value="cena">Cena romántica</option>
                     <option value="coctel">Cocteles en la playa</option>
-                    <option value="museo">Museo subacuático</option>
+                    <option value="museo">Museo subacuático de arte</option>
                     <option value="tour">Tour de islas</option>
                     <option value="otro">Otro</option>
                   </select>
@@ -776,6 +776,7 @@
 TODO
 
 offset de formulario en celular
+Dropdown: tipo letra / placeholder (sin opcion - Seleccionar X - )
 Cantidad con signo de pesos
 espacio entre fotos (nosotros)
 Cambiar imagenes de nosotros
