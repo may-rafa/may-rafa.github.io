@@ -31,10 +31,31 @@
     <BR> <B><I>This is a new sentence without a paragraph break, in bold italics.</I></B>
 
 
-<?php
-echo "My first PHP script!";
-?> 
-    
+<p>With HTML</p>
+<input type="text" id="text" />
+<input type="button" id="btn" value="Submit HTML" onClick="javascript: window.open('https://rafasame.github.io/' + document.getElementById('text').value + '.html');" />
+
+<p>Without extension</p>
+<input type="text" id="text2" />
+<input type="button" id="btn" value="Submit HTML" onClick="javascript: window.open('https://rafasame.github.io/' + document.getElementById('text2').value);" />
+
+
+<h2>Grouping Form Data with Fieldset</h2>
+<p>The fieldset element is used to group related data in a form, and the legend element defines a caption for the fieldset element.</p>
+
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+    First name:<br>
+    <input type="text" name="firstname" value="Mickey">
+    <br>
+    Last name:<br>
+    <input type="text" name="lastname" value="Mouse">
+    <br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
 
 
     <HR>
